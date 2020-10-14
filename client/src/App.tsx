@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "./pages/Layout"
+import LayoutCRR from "./pages/LayoutCRR"
 import { Route, BrowserRouter } from "react-router-dom"
 import { Provider } from "react-redux"
 import { store } from "./redux/store"
@@ -11,7 +11,7 @@ const App: React.FC = () => {
 		<Provider store={ store }>
 			{/* 不管我调哪一个地址都是先给我来一个layout页面 */}
 			<BrowserRouter>
-				<Route path="/" component={Layout}></Route>
+				<Route path="/" component={LayoutCRR}></Route>
 			</BrowserRouter>
 		</Provider>
 	)

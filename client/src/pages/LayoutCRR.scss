@@ -1,0 +1,87 @@
+.ant-layout{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .ant-layout-header{
+        background-color: rgb(26, 139, 250);
+        padding-left: 20px;
+        padding-right: 0px;
+        height: 215px;
+        line-height: 53px;
+        .ant-page-header{
+            background-color:  rgba(0,0,0,0);
+            padding-bottom: 0px;
+            padding-top: 4px;
+            .ant-page-header-heading-title{
+                line-height: 26px;
+                color: #ffffff;
+            }
+        }
+        .main-bottom-title{
+            margin-top: -3px;
+            line-height: 14px;
+            padding-left: 24px; 
+            color: rgb(255, 255, 255);
+        }
+        .verticalLine{
+            border: 1px solid #ffffff;
+            height: 22px;
+            width: 1px;
+            margin-top: 18px;
+            margin-left: -15px;
+            margin-right: 14px;
+        }
+        .sub-bottom-title{
+            line-height: 53px;
+            padding-left: 5px;
+            color: #ffffff;
+            margin-right: 30px;
+        }
+        .ant-menu{
+            color: rgba(255, 255, 255, 0.65);
+            background: rgb(26, 139, 250);
+            .ant-menu-item-selected{
+                background-color: #2d9aff;
+            }
+            .ant-menu-item:hover {
+                background-color: #2d9aff;
+            }
+        }
+        .menu-right{
+            height: 53px;
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 12px;
+            justify-content: flex-end;
+            align-items: center;
+            display: flex;
+            flex: 1;
+            span{
+                margin-left: 25px;
+            }
+            .user{
+                color: rgba(255, 255, 255, 0.65);
+                border: 1px solid rgba(255, 255, 255, 0.65);
+                border-radius: 40%;
+                margin: 0 25px 0 30px;
+                align-items: center;
+                display: flex;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    color: rgba(255, 255, 255, 0.65);
+                    width: 29px;
+                    height: 29px;
+                }
+            }
+        }
+    }
+}
+.site-layout.ant-layout-content {
+    z-index: 10;
+    .main{
+        padding: 0;
+        z-index: 20;
+        height: 100%;
+    }
+}
+

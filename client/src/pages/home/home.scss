@@ -1,0 +1,66 @@
+.layout-wrapper{
+    .layout-wrapper-top{
+        height: 100%;
+        background-color: rgba(26, 139, 250, 0);
+        padding: 0;
+        margin: -115px 8% 0 8%;
+        z-index: 30;
+        min-height: 800px;
+        .welcome{
+            background-color: rgb(26, 139, 250);
+            color: rgba($color: #ffffff, $alpha: 1);
+            font-size: 13px;
+            height: 26px;
+            margin-bottom: 5px;
+            display: flex;
+            .welcome-left{
+                margin-left: 5px;
+                .sentence1{
+                    margin-right: 35px;
+                }
+                .sentence2{
+                    margin-right: 15px;
+                }
+                .anticon{
+                    transform: scale(1.2, 1);
+                    font-size: 12px;
+                }
+            }
+            .welcome-right{
+                display: flex;
+                justify-content: flex-end;
+                flex: 1;
+                align-items: center;
+                margin-right: 30px;
+                .sentence1{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .layout-content{
+            height: 100%;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            .topBox{
+                display: flex;
+                .recommend{
+                    width: 65%;
+                    position: relative;
+                }
+                .left-message-box{
+                    width: 35%;
+                    display: flex;
+                    flex-direction: column;
+                    .total-message{
+
+                    }
+                    .Tips{
+
+                    }
+                }
+            }
+        }
+    }
+}
