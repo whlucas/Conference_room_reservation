@@ -6,6 +6,9 @@ import {
     RightOutlined
 } from '@ant-design/icons';
 import Recommend from "../../components/Home/Recommendation"
+import TotalMsg from "../../components/Home/TotalMsg"
+import Tipes from "../../components/Home/Tipes"
+import ReserveRoom from "../../components/Home/ReserveRoom"
 
 export default class extends React.Component {
     render() {
@@ -30,16 +33,21 @@ export default class extends React.Component {
                                     store.getState().conference.data
                                 } />
                             </div>
-                            <div className="left-message-box">
+                            <div className="right-message-box">
                                 <div className="total-message">
-                                    总体信息
-                            </div>
+                                    <TotalMsg total={26} availableNum={18}></TotalMsg>
+                                </div>
                                 <div className="Tips">
-                                    小提示
-                            </div>
+                                    <Tipes />
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="layout-wrapper-bottom">
+                    <ReserveRoom conList={
+                        store.getState().conference.data
+                    } />
                 </div>
             </div>
         )

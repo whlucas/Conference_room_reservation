@@ -3,28 +3,29 @@ import MovieForm from "../MovieFrom"
 import { IConference } from "../../service/ConferenceService"
 import { MovieService } from "../../service/MovieService"
 import { Carousel } from 'antd';
-import ConferenceCard from "../card/ConferenceCard"
+import ConferenceCard from "../Card/ConferenceCard"
 import './Recommendation.scss'
 import {
     LeftOutlined,
     RightOutlined
 } from '@ant-design/icons';
+import { num2Time } from "../../utils/date"
 
-interface IImageUploaderProps {
+interface IRecommendationProps {
     conList: IConference[]
 }
 
 const contentStyle = {
     display: 'flex',
-    height: '160px',
+    height: '100%',
     color: '#000',
-    lineHeight: '160px',
+    lineHeight: '100%',
     background: '#364d79',
     backgroundColor: '#ffffff'
 };
 
 
-export default class extends React.Component<IImageUploaderProps> {
+export default class extends React.Component<IRecommendationProps> {
     chooseIndex: any = null
 
     firstPageData: IConference[] = []
@@ -37,8 +38,13 @@ export default class extends React.Component<IImageUploaderProps> {
         this.prev = this.prev.bind(this);
     }
 
-    componentDidMount() {
-        console.log(this.props.conList)
+    componentWillMount() {
+
+        this.props.conList.map((item) => {
+            if (item.time){
+                item.time = num2Time[item.time.split('.')[0]]
+            }
+        })
         for(let i = 0; i < 3; i++) {
             this.firstPageData.push(this.props.conList[i])
         }
@@ -71,17 +77,17 @@ export default class extends React.Component<IImageUploaderProps> {
                     <Carousel ref={el => { this.chooseIndex = el }}>
                         <div>
                             <h3 style={contentStyle}>
-                                <ConferenceCard conferenceMSG={this.firstPageData}></ConferenceCard>
+                                <ConferenceCard conferenceArr={this.firstPageData}></ConferenceCard>
                             </h3>
                         </div>
                         <div>
                             <h3 style={contentStyle}>
-                                <ConferenceCard conferenceMSG={this.secondPageData}></ConferenceCard>
+                                <ConferenceCard conferenceArr={this.secondPageData}></ConferenceCard>
                             </h3>
                         </div>
                         <div>
                             <h3 style={contentStyle}>
-                                <ConferenceCard conferenceMSG={this.thirdPageData}></ConferenceCard>
+                                <ConferenceCard conferenceArr={this.thirdPageData}></ConferenceCard>
                             </h3>
                         </div>
                     </Carousel>

@@ -1,14 +1,19 @@
 .recomment-weapper{
+    height: 100%;
     display: flex;
     flex-direction: column;
     .recomment-welcome{
+        height: 17%;
         display: flex;
-        padding: 10px;
+        padding: 10px 10px 6px 10px;
         align-items: center;
         background-color: #ffffff;
         border-radius: 10px 10px 0 0;
         .recomment-welcome-left{
+            color: rgba(0, 0, 0, 0.8);
             font-weight: bold;
+            margin-left: 10px;
+            margin-top: 5px;
         }
         .recomment-welcome-right{
             display: flex;
@@ -19,6 +24,7 @@
             color: #808590;
             .more{
                 margin-right: 10px;
+                font-weight: bold;
             }
             .anticon{
                 margin-right: 10px;
@@ -26,9 +32,11 @@
         }
     }
     .carousel-wrapper{
+        height: 83%;
         border-radius: 0 0 10px 10px;
         padding: 0 8px 0 8px;
         background-color: #ffffff;
+        padding-top: 4px;
         .ant-carousel{
             padding: 0px 15px;
             .slick-list{
@@ -49,11 +57,11 @@
         }
         .carousel-button-left{
                 position: absolute;
-                top: 45%;
+                top: 48%;
             }
             .carousel-button-right{
                 position: absolute;
-                top: 45%;
+                top: 48%;
                 right: 8px;
             }
     }

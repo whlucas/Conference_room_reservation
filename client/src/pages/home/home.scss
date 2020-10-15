@@ -1,16 +1,17 @@
 .layout-wrapper{
+    height: 100%;
+    min-height: 1000px;
     .layout-wrapper-top{
-        height: 100%;
+        height: 250px;
         background-color: rgba(26, 139, 250, 0);
         padding: 0;
-        margin: -115px 8% 0 8%;
+        margin: -115px 7% 0 7%;
         z-index: 30;
-        min-height: 800px;
         .welcome{
             background-color: rgb(26, 139, 250);
             color: rgba($color: #ffffff, $alpha: 1);
             font-size: 13px;
-            height: 26px;
+            height: 10%;
             margin-bottom: 5px;
             display: flex;
             .welcome-left{
@@ -31,36 +32,48 @@
                 justify-content: flex-end;
                 flex: 1;
                 align-items: center;
-                margin-right: 30px;
+                margin-right: 15px;
                 .sentence1{
                     margin-right: 10px;
                 }
             }
         }
         .layout-content{
-            height: 100%;
+            height: 85%;
             border-radius: 10px;
             background-color: rgba(0, 0, 0, 0);
             display: flex;
             flex-direction: column;
             .topBox{
                 display: flex;
+                height: 100%;
                 .recommend{
+                    height: 100%;
                     width: 65%;
                     position: relative;
                 }
-                .left-message-box{
+                .right-message-box{
+                    height: 100%;
                     width: 35%;
                     display: flex;
                     flex-direction: column;
+                    padding-left: 20px;
                     .total-message{
-
+                        width: 100%;
+                        height: 55%;
+                        margin-bottom: 10px;
+                        // background-color: #ffffff;
                     }
                     .Tips{
-
+                        width: 100%;
+                        height: 45%;
+                        // background-color: #ffffff;
                     }
                 }
             }
         }
+    }
+    .layout-wrapper-bottom{
+        max-height: 1000px;
     }
 }

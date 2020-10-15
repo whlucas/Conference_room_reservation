@@ -5,5 +5,62 @@
     margin-top: 5px;
     .site-card-wrapper{
         width: 94%;
+        .ant-card-body{
+            padding: 10px 20px 6px 20px;
+            box-shadow: 0 1px 2px -2px rgba(0,0,0,.16), 0 3px 6px 0 rgba(0,0,0,.12), 0 5px 12px 4px rgba(0,0,0,.09);
+            .card-inner-wrapper{
+                display: flex;
+                flex-direction: column;
+                .top-msg{
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid #c1c1c1;
+                    border-radius: 2px 2px 0 0;
+                    .conference-name{
+                        color: rgba(0,0,0,.85);
+                        font-weight: bold;
+                        font-size: 16px;
+                        margin-bottom: 8px;
+                    }
+                    .other-smg{
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 12px;
+                        .anticon {
+                            color: #838990;
+                            margin-right: 5px;
+                        }
+                        .date-msg{
+                            align-items: center;
+                            display: flex;
+                            margin-bottom: 5px;
+                            .date1{
+                                margin-right: 5px;
+                            }
+                            .date2{
+                                color: #0079e9;
+                            }
+                            
+                        }
+                        .function-msg{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            .people-num{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+                .bottom-operation{
+                    display: flex;
+                    justify-content: center;
+                    color: #0079e9;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-top: 4px;
+                }
+            }
+        }
     }
 }

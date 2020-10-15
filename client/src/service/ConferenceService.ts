@@ -10,6 +10,7 @@ import { IResponseData, IResponseError, IResponsePageData, ISerachCondition } fr
 export interface IConference {
     id?: number
     name: string
+    date: string
     time: string
     size: number
     base: string

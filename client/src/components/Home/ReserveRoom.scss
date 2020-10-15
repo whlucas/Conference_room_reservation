@@ -1,0 +1,99 @@
+.reserve-room-weapper{
+    height: 100%;
+    margin: 0.5% 7% 0 7%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    .query-room{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        .ant-select{
+            margin-right: 13px;
+            font-size: 12px;
+            .ant-select-selector{
+                border-radius: 5px;
+                padding: 0px 15px;
+            }
+        }
+        .query-reset{
+            font-size: 12px;
+            margin-left: 5px;
+            color: #0681f9
+        }
+    }
+}
+
+.select-date{
+    margin-top: 10px;
+    .ant-menu{
+        display: flex;
+        height: 60px;
+        border-bottom: 0px solid #f0f0f0 !important;
+        margin: 0 20px;
+        .ant-menu-item{
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            border-bottom: 0 solid #1890ff !important;
+            margin: 0 0 20px 0 !important;
+            border-right: 1px solid #d9d9d9;
+            .ant-card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .ant-card-head{
+                    display: flex;
+                    height: 30px;
+                    margin-top: -10px;
+                    min-height: auto;
+                    border-bottom: 0 solid #f0f0f0;
+                    font-size: 12px;
+                }
+                .ant-card-body{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2px;
+                    font-size: 12px;
+                    border-radius: 15px;
+                    height: 22px;
+                    width: 23px;
+                    min-height: auto;
+                    padding: 0px;
+                }
+            }
+        }
+        .ant-menu-item:nth-last-child(2){
+            border-right: 0px solid #d9d9d9 !important;
+        }
+        .ant-menu-item-selected{
+            .ant-card{
+                .ant-card-body{
+                    background-color: #1890ff !important;
+                    color: #ffffff !important;
+                }
+            }
+        }
+        .ant-menu-item-active{
+            .ant-card{
+                .ant-card-body{
+                    background-color: #1890ff !important;
+                    color: #ffffff !important;
+                }
+            }
+        }
+    }
+    .bottom-line{
+        margin: 0 20px 0px 20px;
+        border-bottom: 2px solid #f0f0f0 ;
+    }
+}
+
+
+.ant-select-item{
+    font-size: 12px !important;
+}
+.rc-virtual-list-holder{
+    max-height: 180px !important;
+}
